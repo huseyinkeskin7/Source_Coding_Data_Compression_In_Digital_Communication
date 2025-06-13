@@ -1,1 +1,10 @@
 # Source_Coding_Data_Compression_In_Digital_Communication
+# Türkçe
+Bu projede yazılan MATLAB kodu, Huffman kaynak kodlaması algoritmasının dijital haberleşme sistemlerinde nasıl çalıştığını göstermek amacıyla hazırlanmıştır. Kodun ilk kısmında, İngilizce harfler için belirlenen frekans değerlerine göre Huffman ağacı oluşturulmuş ve her bir harf için değişken uzunlukta Huffman kodları atanmıştır. Sık geçen karakterler için daha kısa, nadir geçen karakterler için daha uzun bit dizileri oluşturularak veri sıkıştırma sağlanmıştır.
+Ardından, “itsalwaystooearlytoquit” metni örnek olarak seçilmiş, ASCII karşılıklarıyla orijinal binary formu elde edilmiştir. Daha sonra, metin Huffman algoritmasıyla kodlanmış, kodlu metnin uzunluğu hesaplanmış ve orijinal metin ile karşılaştırılarak sıkıştırma oranı yüzdesel olarak çıkarılmıştır. Ayrıca kodun sonunda, Huffman kodlarından orijinal metni geri çözen bir çözümleme işlemi gerçekleştirilmiştir.
+Bu kod ile Huffman algoritmasının sıkıştırma ve geri açma süreçleri başarıyla simüle edilmiş, kayıpsız (lossless) veri sıkıştırma mantığı MATLAB ortamında uygulanmıştır.
+
+# English
+This MATLAB code demonstrates how the Huffman source coding algorithm works in digital communication systems. In the first part of the code, a Huffman tree is created using predefined probabilities for English letters. Each letter is assigned a variable-length Huffman code: shorter codes for more frequent characters and longer codes for less frequent ones, enabling efficient data compression.
+The text “itsalwaystooearlytoquit” is used as an example, and its original binary form is calculated using ASCII values. The text is then encoded using the generated Huffman codes. The length of the encoded binary string is calculated and compared with the original binary length to determine the compression ratio. Finally, a decoding process is implemented to convert the encoded binary string back to the original text using reverse Huffman mapping.
+This simulation successfully applies the concept of lossless data compression using the Huffman algorithm in a MATLAB environment, verifying both the encoding and decoding processes.
